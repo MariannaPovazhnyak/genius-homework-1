@@ -1,0 +1,156 @@
+/* roboto-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2');
+}
+/* play-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+}
+
+/*variable block*/
+:root{
+--color-brand: #2B7FFF;
+--color-brand-accent: white;
+--color-primary-dark: #011C44;
+--color-primary-light: #4A4A4A;
+--color-second: #747272;
+--background-color-footer: #011C44;
+}
+
+/*basic elements*/
+body {
+    color: black;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+ul {
+    list-style: none;
+}
+h1 {
+    color: var(--color-primary-dark);
+    font: 400 18px Roboto, sans-serif;
+    line-height: 21px;
+}
+h2 {
+    color: var(--color-primary-dark);
+    font: 700 64px 'Play', sans-serif;
+    line-height: 74px;
+    text-align: center;
+}
+p {
+    color: var(--color-primary-dark);
+    font-size: 22px;
+    line-height: 38px;
+}
+footer {
+    background-color: var(--background-color-footer);
+}
+
+/*links & menu items*/
+.mainmenu-home{
+    color: var(--color-brand);
+    font: 700 22px "Play", sans-serif;
+    line-height: 21px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.mainmenu-item {
+    color: var(--color-primary-dark);
+    line-height: 21px;
+    text-decoration: none;
+}
+.mainmenu-item:hover {
+    color:var(--color-brand); 
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 21px;
+}
+.working-button {
+    width: 219px;
+    height: 53px;
+    background-color: var(--color-brand); 
+    border-width: 0px;
+    border-radius: 32px;
+    cursor: pointer;
+    color: var(--color-brand-accent);
+    font-weight: 600;
+    line-height: 21px;
+}
+
+/* sections styles*/
+.hero p {
+    color: var(--color-primary-light);
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+h2 .selection {
+    color: var(--color-brand);
+}
+p .selection {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+ul.advantages {
+    line-height: 24px;
+    text-align: center;
+}
+article h3 {
+    color: var(--color-brand-accent);
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+/* some unique elements */
+.hero .supercaption {
+    color: var(--color-brand);
+    font: 700 140px 'Play', sans-serif;
+    text-transform: capitalize;
+    line-height: 114px;
+}
+
+/* exceptions and one-act styles */
+.left-align {
+    text-align: left;
+}
+
+/* footer styles*/
+footer p {
+    color: var(--color-second);
+    font-size: 13px;
+    line-height: 15px;
+}
+.footermenu-home {
+    color: var(--color-brand);
+    text-decoration: none;
+    font: 700 24px "Play", sans-serif;
+    line-height: 21px;
+}
+.footermenu-item{
+    color: var(--color-brand-accent); 
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+}
